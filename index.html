@@ -7,15 +7,31 @@
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+    <img src="" class="">
+    <div id="div-desaparece" class="botoes-home">
+      <a href="#forca">
+        <input class="btn-iniciar" type="submit" value="iniciar Jogo" id="iniciar-jogo">
+      </a>
+    </div>
+
+    <div id="div-aparece-forca" class="canvas">
+      <canvas id="forca" height="860px" width="1200pxs"></canvas>
+
+    </div>
+  
+
     <div style="text-align:center; margin: 50px 0px;">
       <h1 class="titulo">Jogo da Forca</h1>
       <button class="btn" id="iniciar-jogo">INICIAR JOGO</button>
     </div>
+
     <div style="text-align:center">
       <input class="text-input" type="text" id="input-nova-palavra" placeholder="Escreva uma nova palavra">
       <button class="btn" id="nova-palavra">ADICIONAR PALAVRA</button> 
     </div>
+
     <div style="text-align:center;">
       <canvas id="forca" height="800px" width="1200px"></canvas>
     </div>
