@@ -8,6 +8,23 @@ body {
   background: #F3F5FC;
 }
 
+#forca {
+  background-color: "";
+}
+
+.sublinhado {
+  display: flex;
+}
+
+.desenharLinhas {
+  border-bottom: solid 4px #0A3871;
+  width: 30px;
+  margin: 10px;
+}
+
+.esconderLetra {
+
+}
 
 .titulo {
   padding: 15px;

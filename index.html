@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jogo da Forca</title>
+
+    <link href="">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <img src="" class="">
+    <img src="/imagens/Logo-letraA.png" class="Logo Letra A">
     <div id="div-desaparece" class="botoes-home">
       <a href="#forca">
-        <input class="btn-iniciar" type="submit" value="iniciar Jogo" id="iniciar-jogo">
+      <!-- Botão/input -->
+        <input class="btn-iniciar" type="submit" value="iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo">
       </a>
     </div>
 
     <div id="div-aparece-forca" class="canvas">
+    <!-- Canvas -->    
       <canvas id="forca" height="860px" width="1200pxs"></canvas>
-
+      <div class="sublinhado"></div> 
     </div>
   
+
+    <!-- codigo baixados
 
     <div style="text-align:center; margin: 50px 0px;">
       <h1 class="titulo">Jogo da Forca</h1>
@@ -35,7 +41,15 @@
     <div style="text-align:center;">
       <canvas id="forca" height="800px" width="1200px"></canvas>
     </div>
-    <script type="text/javascript" src="canvas.js"></script>
+    -->
+
+    <!-- Links -->
     <script type="text/javascript" src="forca.js"></script>
+
+    <script type="text/javascript" src="canvas.js"></script>
+    
+
+    
+
   </body>
 </html>
