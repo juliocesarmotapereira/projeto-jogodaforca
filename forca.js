@@ -1,7 +1,10 @@
 //seletores
 let palavras = ["SOL", "LUA", "ESTRELA", "TERRA", "VENTO", "MAR"];
-let tabuleiro = document.getElementById('forca').getContext('2d');
+let tela = document.getElementById('forca').getContext('2d');
 let palavraSecreta = "";
+
+let letras = []
+let erros = 8
 
 function escolherPalavraSecreta() {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)]
@@ -10,10 +13,50 @@ function escolherPalavraSecreta() {
     return palavra
 }
 
-function iniciarJogo() {
-    document.getElementById('div-desaparece').style.display = 'none';
-    
+//parte2
+
+function verificarLetra(key) {
+    let estado = false
+    if (key >= 65 && letras.indexOf(key) || key <= 90 && letras.indexOf(key)) {
+        letras.push(key)
+        console.log(key)
+        console.log(letras)
+        return estado
+    }
+    else {
+        estado = true
+        letras.push(key)
+        console.log(key)
+        console.log(letras, "if true")
+        return estado
+    }
+}
+
+function adicionarLetraIncorreta() {
+    erros -= 1
+}
+
+function iniciaJogo() {
+    document.getElementById("div-desaparece").style.display = 'none';
     escolherPalavraSecreta()
-    desenharCanvas() 
+
+    desenharCanvas()
     desenharLinhas()
+
+    document.onkeydown = (e) => {
+
+        let letra = e.key.toUpperCase()
+
+        if (verificarLetra(letra) && palavraSecreta.includes(letra)) {
+            for (let i = 0; i < palavraSecreta.length; i++) {
+                if (palavraSecreta[i] === letra) {
+                    escreverLetraCorreta(i)
+                }
+            }
+        }
+        else {
+            adicionarLetraIncorreta(letra)
+            escreverLetraIncorreta(letra, erros)
+        }
+    }
 }
