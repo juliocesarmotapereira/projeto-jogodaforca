@@ -8,49 +8,52 @@ body {
   background: #F3F5FC;
 }
 
-#forca {
-  background-color: "";
-}
-
-.sublinhado {
+.btn-iniciar {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  
+  position: absolute;
+  width: 317px;
+  height: 114px;
+  left: 0;
+  top: 20rem;
+  
+/* dark blue/dark-blue-300 */  
+  background: #0A3871;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+
+/* white */
+  color: #FFFFFF;
 }
 
-.desenharLinhas {
-  border-bottom: solid 4px #0A3871;
-  width: 30px;
-  margin: 10px;
+.logo {
+  position: absolute;
+  left: 50px;
+  right: 37.43%;
+  top: 50px;
+  bottom: 0%;
+  width: 50px;
+  height:50px;
 }
 
-.esconderLetra {
+.botoes-home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left:42rem;
+ }
 
-}
-
-.titulo {
-  padding: 15px;
-  width: 30vw;
-  margin: auto;
-
-}
-
-.btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
-  background-color: blue;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 0.5em;
-}
-
-.text-input {
-  border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 0.5em;
-  width: 30%;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+ .canvas {
+  margin-left: 2.5rem;
+  width: 1024px;
+  height:800px;
 }

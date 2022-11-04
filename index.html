@@ -1,55 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jogo da Forca</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da forca</title>
 
-    <link href="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <img src="/imagens/Logo-letraA.png" class="Logo Letra A">
+    <img src="/imagens/logo.svg" class="logo" alt="Logo Letra A"> 
     <div id="div-desaparece" class="botoes-home">
       <a href="#forca">
-      <!-- Botão/input -->
-        <input class="btn-iniciar" type="submit" value="iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo">
+      <!-- botão Input -->
+        <input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciarJogo()" >
       </a>
     </div>
-
     <div id="div-aparece-forca" class="canvas">
-    <!-- Canvas -->    
-      <canvas id="forca" height="860px" width="1200pxs"></canvas>
-      <div class="sublinhado"></div> 
-    </div>
-  
-
-    <!-- codigo baixados
-
-    <div style="text-align:center; margin: 50px 0px;">
-      <h1 class="titulo">Jogo da Forca</h1>
-      <button class="btn" id="iniciar-jogo">INICIAR JOGO</button>
+      <!-- canvas -->
+      <canvas id="forca" height="860px" width="1200"></canvas>
     </div>
 
-    <div style="text-align:center">
-      <input class="text-input" type="text" id="input-nova-palavra" placeholder="Escreva uma nova palavra">
-      <button class="btn" id="nova-palavra">ADICIONAR PALAVRA</button> 
-    </div>
-
-    <div style="text-align:center;">
-      <canvas id="forca" height="800px" width="1200px"></canvas>
-    </div>
-    -->
-
-    <!-- Links -->
+    <!-- links -->
     <script type="text/javascript" src="forca.js"></script>
-
-    <script type="text/javascript" src="canvas.js"></script>
-    
-
-    
-
+    <script type="text/javascript" src="canvas.js"></script> 
   </body>
 </html>
