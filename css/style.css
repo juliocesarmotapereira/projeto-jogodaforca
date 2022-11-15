@@ -261,109 +261,11 @@ label {
   left: 30rem;
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 481px) and (max-width: 796px) {
-  .logo {
-    left: 40px;
-    right: 37.43%;
-    top: 40px;
-    bottom: 0%;
-    width: 50px;
-    height: 50px;
-  }
-
-  .botoes-home {
-    top: 16rem;
-    left: 12.2rem;
-  }
-
-  .btn-palavra {
-    width: 270px;
-    height: 67px;
-    top: 7rem;
-    left: 0.7rem;
-    font-size: 22px;
-    line-height: 20px;
-  }
-
-  .btn-iniciar {
-    width: 289px;
-    height: 100px;
-    top: 0;
-    font-size: 22px;
-    line-height: 20px;
-  }
-
-  .btn-azul {
-    width: 300px;
-    height: 67px;
-    left: 31.5%;
-    top: 450px;
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 25px;
-  }
-
-  .btn-branco {
-    width: 300px;
-    height: 67px;
-    left: 20px;
-    top: 450px;
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  label {
-    padding-left: 3rem;
-    font-size: 18px;
-  }
-
-  .form-group {
-    left: 1.5rem;
-    top: 710px;
-  }
-
-  .botoes-div {
-    width: 680px;
-    height: 57px;
-    left: 0.5rem;
-    top: 740px;
-  }
-
-  .text-input {
-    width: 550px;
-    height: auto;
-    left: 2rem;
-    top: 200px;
-    font-size: 32px;
-  }
-
-  .img-alerta {
-    left: 1rem;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-  }
-
-  .canvas {
-    margin-left: -4rem;
-    width: 739px;
-    height: 800px
-  }
-
-  .botoes-div-canvas {
-    width: 680px;
-    height: 67px;
-    left: 9rem;
-    top: 64rem;
-  }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Responsivo */
+/* Smartphones (retrato e paisagem) */
+@media (max-width: 450px) {
   body {
-    min-width: 375px;
-    min-height: 667px;
+    overflow-x: hidden;
   }
 
   .logo {
